@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Lista de Tarefas</h1>
+  <div class="nova-tarefa">
+    <input [(ngModel)]="novaTarefa" placeholder="Nova tarefa" />
+    <button (click)="addTarefa()">Adicionar</button>
+  </div>
+  <ul>
+    <li *ngFor="let tarefa of tarefas" [class.completed]="tarefa.concluida">
+      {{ tarefa.mensagem }}
+      <button (click)="concluirTarefa(tarefa.id)">Concluir</button>
+      <button (click)="deleteTarefa(tarefa.id)">Excluir</button>
+    </li>
+  </ul>
+</div>

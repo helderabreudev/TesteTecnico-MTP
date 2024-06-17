@@ -1,0 +1,46 @@
+.container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nova-tarefa {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nova-tarefa input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.completed {
+  text-decoration: line-through;
+}
